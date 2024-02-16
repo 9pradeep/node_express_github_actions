@@ -41,9 +41,8 @@ app.get("/valueofday/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})", (req, res) => {
 app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
 })
-
-// Assuming app is your Express application instance
-app.get('/name/:pradeep', (req, res) => {
-  const name = req.params.name; // Extract the name parameter from the URL
-  res.send(`Hello, ${name}! This is the /name route!`);
+//adding my name
+app.get('/admin', function (req, res) => {
+  res.send('Pradip Shrestha')
+})
 });
