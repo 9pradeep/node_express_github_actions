@@ -3,6 +3,7 @@ var express = require('express')
 var app = express()
 
 const SERVER_PORT = 3000
+
 const SERVER_HOST = "localhost"
 
 app.use(express.json()) // for parsing application/json
@@ -40,3 +41,9 @@ app.get("/valueofday/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})", (req, res) => {
 app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
 })
+
+// Assuming app is your Express application instance
+app.get('/name/:pradeep', (req, res) => {
+  const name = req.params.name; // Extract the name parameter from the URL
+  res.send(`Hello, ${name}! This is the /name route!`);
+});

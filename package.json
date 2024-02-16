@@ -1,7 +1,7 @@
 {
   "name": "node_apps",
   "version": "1.0.0",
-  "description": "",
+  "description": "- https://blog.logrocket.com/ci-cd-node-js-github-actions/\r - https://medium.com/geekculture/deploy-node-applications-on-heroku-a89ed51e0a34",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
-  }
+    "express": "^4.18.2"
+  },
+  "keywords": []
 }
